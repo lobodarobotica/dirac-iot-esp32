@@ -125,7 +125,7 @@ void DiracEsp32::mqtt_publish(const char *TOPIC_PUBLISH, char *payload)
 	Serial.println(payload);
 	MQTT.publish(TOPIC_PUBLISH_Class, payload);
 }
-void DiracEsp32::mqtt_recebe(void (*func)(char *topic, byte *payload, unsigned int length))
+void DiracEsp32::mqtt_receive(void (*func)(char *topic, byte *payload, unsigned int length))
 {
 	MQTT.setCallback(func);
 }

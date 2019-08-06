@@ -32,7 +32,7 @@ class DiracEsp32
 	 void mqtt_loop();
 	 int mqtt_state();
 	 void mqtt_publish(const char* TOPIC_PUBLISH, char *payload);
-	 void mqtt_recebe(void(*func)(char* topic, byte* payload, unsigned int length));
+	 void mqtt_receive(void(*func)(char* topic, byte* payload, unsigned int length));
 	 void mac_to_topic();
 	 void ip_by_host(const char * host_name);
 	 void mqtt_topic(const char *TOPIC_SUBSCRIBE);

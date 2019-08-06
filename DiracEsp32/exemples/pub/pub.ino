@@ -44,7 +44,7 @@ void loop() {
   if(millis() - last_msg >= 10000){
     last_msg = millis();
     /*Função que publica a mensagem no tópico definido*/
-    dirac.mqtt_publish(TOPIC_PUB, "Olá");
+    dirac.mqtt_publish(TOPIC_PUB, "Hello World");
   }
 
   /*Função obrigatória para manter a conexão com o broker*/
